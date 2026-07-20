@@ -1,0 +1,122 @@
+/*
+  Estrutura de uma regra CSS:
+
+  seletor {
+    propriedade: valor;
+  }
+
+  Exemplo:
+
+  p {
+    color: blue;
+  }
+
+  p     = seletor
+  color = propriedade
+  blue  = valor
+*/
+
+/* AULA 01 - SELETORES E CORES */
+
+
+/*
+  O seletor universal é representado por *.
+  Ele seleciona todos os elementos da página
+*/
+
+* {
+    /*
+    Aplica a todos os elementos uma forma de cálculo em que 
+    o padding e a borda cabem dentro do tamanho definido.
+  */
+    box-sizing: border-box;
+}
+
+/* body é um seletor de tag */
+body {
+    /* O valor 0 remove a margem automática colocada pelo navegador */
+    margin: 0;
+
+    /* Define a cor de fundo da página */
+    background-color: #f1f5f9;
+
+    /* Define a cor principal dos textos */
+    color: #1e293b;
+}
+
+/* Uma classe começa com ponto no CSS */
+.limite-conteudo {
+
+    /* Ocupa 90% da largura disponível */
+    width: 90%;
+
+    /* Limita a largura máxima do conteúdo */
+    max-width: 1120px;
+
+    /* Centraliza o elemento horizontalmente */
+    margin: 0 auto;
+}
+
+/* A vírgula permite selecionar vários elementos */
+h1,
+h2,
+h3 {
+    color: #0f172a;
+}
+
+/* Seleciona todos os parágrafos */
+p {
+    color: #475569;
+}
+
+
+/* Seleciona elementos que possuem class="destaque" */
+.destaque {
+    background-color: #f0fdf4;
+}
+
+/* Seleciona o elemento que possui id="titulo-especial" */
+#titulo-especial {
+    color: #b91c1c;
+}
+
+.cabecalho {
+    background-color: #1d4ed8;
+    color: white;
+}
+
+/* Seleciona os parágrafos que estão dentro do cabeçalho */
+.cabecalho p {
+    color: white;
+}
+
+.menu {
+    background-color: #0f172a;
+}
+
+.menu a {
+    color: white;
+}
+
+.secao {
+    background-color: white;
+}
+
+.cartao {
+    background-color: #f8fafc;
+}
+
+.cartao-tag {
+    background-color: #eff6ff;
+    border-color: #bfdbfe;
+}
+
+.cartao-classe {
+    background-color: #f0fdf4;
+    border-color: #bbf7d0;
+}
+
+.cartao-id {
+    background-color: #fef2f2;
+    border-color: #fecaca;
+}
