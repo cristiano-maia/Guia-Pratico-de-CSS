@@ -484,3 +484,94 @@ code {
   text-decoration: none;
 }
 
+/*
+  ==================================================
+  AULA 04 — DISPLAY E FLEXBOX
+  ==================================================
+*/
+
+.menu-conteudo {
+  /* Ativa o Flexbox */
+  display: flex;
+
+  /* Centraliza os links  */
+  justify-content: center;
+
+  /* Cria espaço entre os links */
+  gap: 14px;
+
+  /* Permite rolagem horizontal */
+  overflow-x: auto;
+}
+
+.menu a {
+  display: block;
+  padding: 17px 14px;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  border-bottom: 3px solid transparent;
+}
+
+.elemento-inline {
+  display: inline;
+  background-color: #fde68a;
+}
+
+
+.elemento-block {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #bfdbfe;
+}
+
+
+.elemento-inline-block {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 15px;
+  background-color: #fecaca;
+}
+
+.exemplo-display {
+  padding: 25px;
+  background-color: #f8fafc;
+  border-radius: 8px;
+}
+
+.container-flex {
+  display: flex;
+
+  /* Organiza os itens em linha */
+  flex-direction: row;
+
+  /* Distribui o espaço entre os itens */
+  justify-content: space-between;
+
+  /* Faz os itens acompanharem a altura disponível */
+  align-items: stretch;
+
+  /* Permite a quebra para outra linha */
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.item-flex {
+  /*    Permite que o item cresça */
+  flex-grow: 1;
+
+  /* Define o tamanho inicial do item */
+  flex-basis: 220px;
+
+  padding: 26px;
+  background-color: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 9px;
+}
+
+.numero-item {
+  color: #2563eb;
+  font-size: 30px;
+  font-weight: 700;
+}
