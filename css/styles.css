@@ -766,34 +766,63 @@ html {
     font-size: 36px;
   }
 
-
   .cabecalho {
     padding: 42px 0;
   }
 
-
-  .menu-conteudo {
-    justify-content: flex-start;
+  /*
+    Em telas menores, o menu deixa de ficar
+    fixo no topo para não ocupar muito espaço.
+  */
+  .menu {
+    position: static;
   }
 
+  /*
+    Organiza os links do menu
+    um abaixo do outro.
+  */
+  .menu-conteudo {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    overflow-x: visible;
+  }
+
+  /*
+    Cada link passa a ocupar
+    toda a largura do menu.
+  */
+  .menu a {
+    width: 100%;
+    padding: 14px 20px;
+    text-align: center;
+    white-space: normal;
+    border-bottom: 1px solid #334155;
+  }
 
   .secao {
     padding: 22px;
   }
 
-
   .titulo-aula h2 {
     font-size: 28px;
   }
 
-
-  /* A lista deixa de ter duas colunas */
+  /*
+    A lista deixa de ter duas colunas.
+  */
   .conteudo-aula ul {
     columns: 1;
   }
 
-  /* Os elementos deixam de ficar lado a lado
-    e passam a ficar um abaixo do outro */
+  /*
+    Os elementos deixam de ficar lado a lado
+    e passam a ficar um abaixo do outro.
+  */
   .area-cartoes,
   .area-fundos,
   .comparacao-espacamento,
@@ -803,26 +832,24 @@ html {
     flex-direction: column;
   }
 
-
-
-    .botao {
+  /*
+    Os botões ocupam toda
+    a largura disponível.
+  */
+  .botao {
     width: 100%;
   }
-
 
   .box-margin {
     padding: 18px;
   }
 
-
   .box-border {
     padding: 16px;
   }
 
-
   .box-padding {
     padding: 18px;
   }
-
 
 }
