@@ -575,3 +575,254 @@ code {
   font-size: 30px;
   font-weight: 700;
 }
+
+/*
+  ==================================================
+  AULA 05 — EFEITOS E RESPONSIVIDADE
+  ==================================================
+*/
+
+
+html {
+  /*Cria uma rolagem suave */
+  scroll-behavior: smooth;
+}
+
+
+.menu {
+  /* Mantém o menu no topo da tela */
+  position: sticky;
+  top: 0;
+
+  /* Coloca o menu na frente dos demais elementos */
+  z-index: 10;
+}
+
+.menu a {
+  transition:
+    color 0.3s,
+    border-color 0.3s,
+    background-color 0.3s;
+}
+
+
+.menu a:hover {
+  color: #60a5fa;
+  border-bottom-color: #3b82f6;
+  background-color: #172554;
+}
+
+
+.area-botoes {
+  display: flex;
+  gap: 14px;
+}
+
+
+.botao {
+  border: none;
+  padding: 14px 22px;
+  border-radius: 7px;
+  font-size: 16px;
+  font-weight: 700;
+
+  /* Exibe uma mão ao passar sobre o botão */
+  cursor: pointer;
+
+  transition:
+    background-color 0.3s,
+    transform 0.3s;
+}
+
+
+.botao-principal {
+  background-color: #2563eb;
+  color: white;
+}
+
+
+.botao-secundario {
+  background-color: #475569;
+  color: white;
+}
+
+
+.botao:hover {
+  /*  Aumenta o tamanho do botão */
+  transform: scale(1.05);
+}
+
+
+.botao-principal:hover {
+  background-color: #1e40af;
+}
+
+
+.botao-secundario:hover {
+  background-color: #334155;
+}
+
+
+.botao:active {
+  /*  Diminui o botão durante o clique  */
+  transform: scale(0.95);
+}
+
+
+.area-efeitos {
+  display: flex;
+  gap: 20px;
+}
+
+
+.cartao-efeito,
+.cartao-opacidade,
+.cartao-rotacao {
+  flex: 1;
+  padding: 26px;
+  border-radius: 9px;
+}
+
+
+.cartao-efeito {
+  background-color: #ede9fe;
+  border: 1px solid #c4b5fd;
+
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+
+
+
+.cartao-efeito:hover {
+  /* Move o cartão para cima */
+  transform: translateY(-10px);
+
+  box-shadow: 0 12px 25px rgba(15, 23, 42, 0.16);
+}
+
+
+.cartao-opacidade {
+  background-color: #fee2e2;
+
+  /* Deixa o elemento parcialmente transparente */
+  opacity: 0.6;
+
+  transition: opacity 0.3s;
+}
+
+
+
+.cartao-opacidade:hover {
+  opacity: 1;
+}
+
+
+.cartao-rotacao {
+  background-color: #dcfce7;
+  transition: transform 0.3s;
+}
+
+
+.cartao-rotacao:hover {
+  /*  Gira o elemento */
+  transform: rotate(2deg);
+}
+
+
+
+.aviso-responsividade {
+  margin-top: 30px;
+  padding: 25px;
+  background-color: #fef9c3;
+  border: 2px dashed #ca8a04;
+  border-radius: 9px;
+}
+
+
+.rodape {
+  padding: 30px;
+  background-color: #0f172a;
+  text-align: center;
+}
+
+
+.rodape p {
+  color: white;
+  margin: 5px 0;
+}
+
+
+
+
+/*
+  As regras abaixo serão aplicadas em telas
+  com no máximo 760 pixels.
+*/
+@media (max-width: 760px) {
+
+  #titulo-principal {
+    font-size: 36px;
+  }
+
+
+  .cabecalho {
+    padding: 42px 0;
+  }
+
+
+  .menu-conteudo {
+    justify-content: flex-start;
+  }
+
+
+  .secao {
+    padding: 22px;
+  }
+
+
+  .titulo-aula h2 {
+    font-size: 28px;
+  }
+
+
+  /* A lista deixa de ter duas colunas */
+  .conteudo-aula ul {
+    columns: 1;
+  }
+
+  /* Os elementos deixam de ficar lado a lado
+    e passam a ficar um abaixo do outro */
+  .area-cartoes,
+  .area-fundos,
+  .comparacao-espacamento,
+  .container-flex,
+  .area-botoes,
+  .area-efeitos {
+    flex-direction: column;
+  }
+
+
+
+    .botao {
+    width: 100%;
+  }
+
+
+  .box-margin {
+    padding: 18px;
+  }
+
+
+  .box-border {
+    padding: 16px;
+  }
+
+
+  .box-padding {
+    padding: 18px;
+  }
+
+
+}
