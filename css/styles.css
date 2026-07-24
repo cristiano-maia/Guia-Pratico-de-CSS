@@ -770,18 +770,13 @@ html {
     padding: 42px 0;
   }
 
-  /*
-    Em telas menores, o menu deixa de ficar
-    fixo no topo para não ocupar muito espaço.
-  */
+  /* Em telas menores, o menu deixa de ficar
+    fixo no topo para não ocupar muito espaço */
   .menu {
     position: static;
   }
 
-  /*
-    Organiza os links do menu
-    um abaixo do outro.
-  */
+  /* Organiza os links do menu um abaixo do outro */
   .menu-conteudo {
     width: 100%;
     max-width: none;
@@ -792,10 +787,7 @@ html {
     overflow-x: visible;
   }
 
-  /*
-    Cada link passa a ocupar
-    toda a largura do menu.
-  */
+  /* Cada link passa a ocupar toda a largura do menu */
   .menu a {
     width: 100%;
     padding: 14px 20px;
@@ -812,17 +804,13 @@ html {
     font-size: 28px;
   }
 
-  /*
-    A lista deixa de ter duas colunas.
-  */
+  /* A lista deixa de ter duas colunas */
   .conteudo-aula ul {
     columns: 1;
   }
 
-  /*
-    Os elementos deixam de ficar lado a lado
-    e passam a ficar um abaixo do outro.
-  */
+  /* Os elementos deixam de ficar lado a lado
+    e passam a ficar um abaixo do outro */
   .area-cartoes,
   .area-fundos,
   .comparacao-espacamento,
@@ -832,10 +820,7 @@ html {
     flex-direction: column;
   }
 
-  /*
-    Os botões ocupam toda
-    a largura disponível.
-  */
+  /* Os botões ocupam toda a largura disponível */
   .botao {
     width: 100%;
   }
